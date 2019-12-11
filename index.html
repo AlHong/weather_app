@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Weather App</title>
+		<script src="myScript.js"></script>
+		<link rel="stylesheet" type="text/css" href="myStyle.css">
+	</head>
+	
+	<body>
+		<h2>Weather Forecast</h2>
+	
+		<form>
+			<input type="radio" name="temperature_unit" value="fahrenheit"> Fahrenheit 
+			<br>
+			<input type="radio" name="temperature_unit" value="celsius"> Celsius
+			<br>
+			<br>
+			City: <input type="text" id="city"></input>
+			<br>
+			<br>
+			<input type="submit" value="Get Weather Forecast" onclick="getForecast();return false;"></input>
+		</form>
+
+		<br>
+		<hr>
+
+		
+		<div id="current_forecast"></div>
+
+		<br>
+		<hr>
+
+		
+		<div id="5_day_forecast"></div>
+
+		<br>
+		
+
+		<div id="3_hour_forecast">
+		</div>
+
+	</body>
+</html>
